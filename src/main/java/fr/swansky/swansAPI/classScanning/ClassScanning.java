@@ -11,5 +11,6 @@ public interface ClassScanning {
     Set<ScannedClassDetails> scanClassesAndMethodsByAnnotations(Set<Class<?>> classes,
                                                                 Set<Class<? extends Annotation>> annotationsClasses,
                                                                 Set<Class<? extends Annotation>> annotationsMethods);
-
+    Set<ScannedClassDetails> scanClassesByAnnotation(Set<Class<?>> classes,
+                                                     Class<? extends Annotation> annotations);
 }
