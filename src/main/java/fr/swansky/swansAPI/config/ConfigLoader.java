@@ -21,7 +21,7 @@ public class ConfigLoader {
         this.gson = builder.create();
     }
 
-    private static ConfigLoader getInstance() {
+    public static ConfigLoader getInstance() {
         if (configLoader == null) {
             configLoader = new ConfigLoader();
         }
